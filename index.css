@@ -19,6 +19,7 @@ body {
     position: relative;
     height: 30vh;
     background-image: url(assets/images/background-pattern-desktop.svg);
+    background-size: cover;
     display: flex;
     justify-content: center;
 }
@@ -72,9 +73,22 @@ body {
 .answer {
     letter-spacing: .05em;
     padding-top: 1em;
-    width: 400px;
+    max-width: 400px;
 }
 
 .hide {
     display: none;
+}
+
+
+@media (max-width: 768px){
+    .faq {
+        position: relative;
+        margin: auto 1.5em;
+    }
+
+    .answer {
+        width: 100%;
+        letter-spacing: 0;
+    }
 }
